@@ -1,5 +1,7 @@
 def missing_number_list(list1):
     missing_values_list=list()
+    if not isinstance (list1,list):
+        return 'only lists are allowed'
     for i in range(1,10):
         if i not in list1:
             missing_values_list.append(i)
